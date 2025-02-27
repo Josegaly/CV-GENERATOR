@@ -1,0 +1,236 @@
+body {
+    font-family: 'Georgia', serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    gap: 1px;
+    /*justify-content: flex-end;  Aligner à droite */
+    align-items: flex-start; /* Aligner en haut */
+    min-height: 100vh;
+}
+
+.contenu-global {
+    width: 100%; /* 60% de la largeur de l'écran */
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    
+}
+
+@media (max-width: 768px) {
+    .contenu-global {
+        width: 100%; /* Pleine largeur sur les petits écrans */
+        flex-direction: column; /* Empiler les parties verticalement */
+    }
+}
+
+.partie1 {
+    flex: 1;
+    background-color: #2c3e50; /* Fond bleu foncé */
+    color: #fff;
+    padding: 30px;
+    text-align: right;
+}
+
+.partie2 {
+    flex: 2;
+    padding: 30px;
+    background-color: #fff;
+}
+
+.image-contenu img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #2c3e50;
+    text-transform: uppercase;
+}
+
+hr {
+    border: 1px solid #2c3e50;
+    margin: 20px 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #fff;
+}
+
+.contact-info span {
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+.bloc {
+    margin-bottom: 30px;
+}
+
+.bloc p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.bloc .company {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.bloc .date {
+    font-size: 0.85rem;
+    color: #777;
+}
+
+.bloc .description {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+.bloc .subtile {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.bloc .compt, .bloc .lg {
+    font-size: 0.95rem;
+    color: #fff;
+}
+
+.bloc .centre {
+    font-size: 0.95rem;
+    color: #fff;
+}
+
+.bloc .institution {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.bloc .datefor {
+    font-size: 0.85rem;
+    color: #777;
+}
+
+.bloc .CI {
+    color: #fff;
+}
+
+.bloc #centreInt {
+    color: #fff;
+}
+.form-container{
+    width: 50%;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: -10px;
+}
+
+.cv-template{
+    width: 50%;
+    margin-top: 68px;
+    box-shadow: #2c3e50;
+}
+.pos_plus{
+    margin: auto;
+    margin: 15%;
+    margin-top: 30%;
+}
+.dataform{
+    margin: 5%;
+    border: 2px solid green;
+    
+    padding: 10px;
+}
+.container-cv{
+    margin-left: -50px;
+    margin-right: -50px;
+}
+input.error {
+    border: 2px solid red;
+    color:red;
+}
+
+
+    /* Style pour la liste des compétences */
+.list-group-item {
+    list-style-type: disc; /* Ajouter des puces */
+    padding: 5px 0; /* Réduire le padding */
+    border: none; /* Supprimer la bordure */
+    background-color: transparent; /* Supprimer le fond blanc */
+    margin-bottom: 5px;
+    /* Supprimer color: #fff; */
+}
+
+/* Style pour le conteneur de la compétence */
+.competence-item {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style pour le nom de la compétence */
+.competence-nom {
+    margin-bottom: 3px; /* Espace entre le nom et le niveau */
+}
+
+/* Style pour le niveau de compétence */
+.competence-niveau {
+    font-size: 0.9em;
+}
+
+/* Forcer la couleur noire uniquement dans le formulaire */
+#cvForm .competence-nom,
+#cvForm .competence-niveau {
+    color: black; /* Couleur noire */
+}
+
+/* Style pour le CV  */
+#cvOutput .competence-nom,
+#cvOutput .competence-niveau {
+    color: white; /* Couleur blanche pour le CV */
+}
+
+/* Style pour le CV */
+#cvOutput .langue-nom,
+#cvOutput .langue-niveau {
+    color: white; /* Couleur blanche pour le CV */
+}
