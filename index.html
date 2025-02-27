@@ -43,9 +43,19 @@
                     <label class="form-label">Titre du poste </label>
                     <input type="text" class="form-control" name="titre[]" id="poste"
                         placeholder="Entrez le titre de votre poste">
-                    <label class="form-label">Situation matrimoniale </label>
+                    <!-- <label class="form-label">Situation matrimoniale </label>
                     <input type="text" class="form-control" name="Situation[]" id="situation"
-                        placeholder="Entrez votre  Situation actuelle">
+                        placeholder="Entrez votre  Situation actuelle"> -->
+                        <div class="form-group">
+                            <label for="gender">Situation matrimoniale</label>
+                            <select class="form-control" id="situation" required>
+                                <option value="">Sélectionnez votre situation matimoniale</option>
+                                <option value="Marie">Marie</option>
+                                <option value="Celibataire">Celibataire</option>
+                                <option value="Divorcer">Divorcer</option>
+                                <option value="Veuve">Veuve</option>
+                            </select>
+                        </div>
                     <label class="form-label">Description </label>
                     <textarea class="form-control" id="experience" rows="3"
                         placeholder="Decrivez votre poste"></textarea>
