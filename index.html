@@ -126,22 +126,6 @@
                 </div>
 
 
-                <div class="form-group">
-                    <legend>Reférences</legend>
-                    <label class="form-label">Nom</label>
-                    <input type="text" class="form-control" name="nom[]" id="NomR"
-                        placeholder="Entrez le nom de votre diplome">
-                    <label class="form-label">poste </label>
-                    <input type="text" class="form-control" name="nom[]" id="posteR"
-                        placeholder="Entrez le nom de votre établissement">
-                    <label class="form-label">Contact</label>
-                    <input type="number" class="form-control" name="Durée[]" id="conctactR"
-                        placeholder="Entrez l'année d'obtention de ce diplome">
-                    <button type="button" class="btn btn-success w-100 mt-2"
-                        onclick="ajouterReference()">Ajouter</button>
-                    <ul class="list-group mt-2" id="listeReferences"></ul>
-
-                </div>
 
                 <div class="mb-3">
                     <label class="form-label">Langues</label>
@@ -171,15 +155,15 @@
                         <hr class="my-3">
                         <div class="contact-info">
                             <div class="mb-2">
-                                <span id="telephonecv">06 66 66 66 66</span>
+                                <span id="telephonecv"></span>
                                 <i class="fas fa-phone"></i>
                             </div>
                             <div class="mb-2">
-                                <span id="adressecv">Paris, France</span>
+                                <span id="adressecv"></span>
                                 <i class="fas fa-map-marker-alt"></i>
                             </div>
                             <div class="mb-2">
-                                <span id="emailcv">prenom.nom@mail.com</span>
+                                <span id="emailcv"></span>
                                 <i class="fas fa-envelope"></i>
                             </div>
 
@@ -202,7 +186,7 @@
                         <h3 id="centreInt"><strong>CENTRES D’INTÉRÊT</strong></h3>
                         <hr class="my-3">
                         <div class="centre">
-                            <p class="lg">Equitation<span id="centreInteretcv"></span></p>
+                            <p class="lg"><span id="centreInteretcv"></span></p>
 
                         </div>
                     </div>
@@ -210,12 +194,12 @@
                         <h3 id="centreInt"><strong>AGE</strong></h3>
                         <hr class="my-3">
                         <div class="centre">
-                            <p class="lg">XXXX<span id="agecv"></span></p>
+                            <p class="lg"><span id="agecv"></span></p>
                         </div>
                         <h3 id="centreInt"><strong>SEXE</strong></h3>
                         <hr class="my-3">
                         <div class="centre">
-                            <p class="lg">XXXX<span id="sexecv"></span></p>
+                            <p class="lg"><span id="sexecv"></span></p>
                         </div>
                     </div>
                 </div>
@@ -224,8 +208,8 @@
                 <div class="partie2">
                     <div class="bloc">
                         <div class="nom">
-                            <h1><strong>Prenom NOM <span id="nomprenomcv"></span> </strong></h1>
-                            <p class="subtile"><strong>ASSISTANT DE COMMUNICATION <span
+                            <h1><strong><span id="nomprenomcv"></span> </strong></h1>
+                            <p class="subtile"><strong><span
                                         id="titrepostecv"></span></strong></p>
                             <p class="description"><span id="descriptioncv"></span></p>
                         </div>
@@ -236,12 +220,12 @@
                         <div class="experience">
                             <div id="cvExperiences"></div>
 
-                            <h4><strong>Assistant de Communication Digitale<span id="posteoccupecv"></span></strong>
+                            <h4><strong><span id="posteoccupecv"></span></strong>
                             </h4>
-                            <p class="company">Groupe Chanel – Paris, France<span id="nomEntreprisecv"></span></p>
-                            <p class="date">Sept. 20XX - Feb. 20XX<span id="dureecv"></span></p>
+                            <p class="company"><span id="nomEntreprisecv"></span></p>
+                            <p class="date"><span id="dureecv"></span></p>
                             <ul>
-                                <li>Coordination des campagnes de communication.<span id="descriptionMissioncv"></span>
+                                <li><span id="descriptionMissioncv"></span>
                                 </li>
 
                             </ul>
@@ -252,15 +236,15 @@
                     <div class="bloc">
                         <h3 id="formation"><strong>FORMATION</strong></h3>
                         <hr class="my-3">
-                        <h4><strong>Master 1 en Communication et Médias<span id="diplomecv"></span></strong></h4>
-                        <p class="institution">CELSA - Paris, France<span id="etablissementcv"></span></p>
-                        <p class="datefor">20XX - 20XX<span id="anneeObtentioncv"></span></p>
+                        <h4><strong><span id="diplomecv"></span></strong></h4>
+                        <p class="institution"><span id="etablissementcv"></span></p>
+                        <p class="datefor"><span id="anneeObtentioncv"></span></p>
 
                     </div>
                     <div class="bloc">
                         <h3 id="formation"><strong>SITUATION MATRIMONIALE</strong></h3>
                         <hr class="my-3">
-                        <h4><strong>MARIE<span id="situationmatimoniale"></span></strong></h4>
+                        <h4><strong><span id="situationmatimoniale"></span></strong></h4>
 
 
                     </div>
@@ -268,7 +252,7 @@
             </div>
         </div>
     </div>  
-            <button id="downloadPdf"  class="btn btn-primary button-download" onclick="imprimer()">Télécharger en PDF</button>
+            <button id="downloadPdf"  class="btn btn-success button-download" onclick="imprimer()">Télécharger en PDF</button>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
             <script src="script.js"></script>
 
