@@ -108,9 +108,6 @@ function updateCV(event) {
     }
 }
 
- 
-
-
 // Attacher les écouteurs d'événements
 function attachEventListeners() {
     // Écouteurs pour la prévisualisation en temps réel
